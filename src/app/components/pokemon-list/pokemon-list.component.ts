@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PokemonService } from '../../services/pokemon.service';
 import { Pokemon } from '../../model/pokemon';
 import { Type } from '../../model/type';
 
@@ -9,16 +10,8 @@ import { Type } from '../../model/type';
 })
 export class PokemonListComponent {
 
-  pokemons: Pokemon[] = [
-    {
-      image: 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png',
-      number: 1,
-      name: 'Bulbasaur',
-      types: [
-        Type.Grass,
-        Type.Poison
-      ]
-    }
-  ];
+  constructor(public pokemonService: PokemonService) {
+    
+  }
 
 }
