@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { combineLatest, forkJoin, mergeMap, Observable, ReplaySubject, shareReplay } from 'rxjs';
-import { map, tap } from 'rxjs/operators'
+import { forkJoin, mergeMap, Observable } from 'rxjs';
+import { map } from 'rxjs/operators'
 import { Item, FullResponse, Pokemon } from '../model/pokemon';
 import { PaginatedResponse } from '../model/paginated-response';
 
